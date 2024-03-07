@@ -23,7 +23,7 @@ export default function MudarTema() {
 
   return (
     <div>
-      <button onClick={trocaTema}>☀️</button>
+      <button className="teste" onClick={trocaTema}>☀️</button>
     </div>
   );
 }
