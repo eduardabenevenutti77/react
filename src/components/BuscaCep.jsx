@@ -14,7 +14,7 @@ export default function BuscaCep() {
   }
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <h1>Busque informação sobre determinado CEP</h1>
       <input
         type="text"
         name="cep"
@@ -22,12 +22,13 @@ export default function BuscaCep() {
         value={cep}
         onChange={(e) => setCep(e.target.value)}
       />
-      <div>
-        <p>CEP: {retorno.cep}</p>
-        <p>Logradouro: {retorno.logradouro}</p>
-        <p>Bairro: {retorno.bairro}</p>
-        <p>Cidade: {retorno.localidade}</p>
-        <p>Estado: {retorno.uf}</p>
+      <div className="grid">
+        <p className="title_name">Retorno de dados:</p>
+        <p className="text">CEP: {retorno.cep}</p>
+        <p className="text">Logradouro: {retorno.logradouro}</p>
+        <p className="text">Bairro: {retorno.bairro}</p>
+        <p className="text">Cidade: {retorno.localidade}</p>
+        <p className="text">Estado: {retorno.uf}</p>
       </div>
       <button
         onClick={() => {
